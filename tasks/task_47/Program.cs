@@ -36,15 +36,10 @@ void AusdruckenArray(double[,] array)
     }
 }
 
-System.Console.WriteLine("Geben Sie die Anzahl der Zeilen ein: ");
+Console.WriteLine("Geben Sie die Anzahl der Zeilen ein: ");
 int zeile = int.Parse(Console.ReadLine()!);
-System.Console.WriteLine("Geben Sie die Anzahl der Spalten ein: ");
+Console.WriteLine("Geben Sie die Anzahl der Spalten ein: ");
 int spalte = int.Parse(Console.ReadLine()!);
-
-// Console.WriteLine("Geben Sie die erste Zahl aus dem Zufallszahlenbereich ein");
-// int minValue = int.Parse(Console.ReadLine()!);
-// System.Console.WriteLine("Geben Sie die letzte Zahl aus dem Zufallszahlenbereich ein");
-// int maxValue = int.Parse(Console.ReadLine()!);
 
 double[,] neuArray = ArrayErstellen(zeile, spalte);
 AusdruckenArray(neuArray);
